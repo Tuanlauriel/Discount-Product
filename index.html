@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Future Value Calculator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            margin-top: 2rem;
+            border: 5px solid #4e48f8;
+            padding: 2rem;
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        .form-title {
+            color: #4e48f8;
+            margin-bottom: 1rem;
+        }
+
+        .form-control {
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        .ml-5 {
+            margin-left: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="display_results.php" method="post">
+            <h1 class="form-title">Future Value Calculator</h1>
+            <div style="display: flex; justify-content: start;">
+                <div>
+                    <label class="d-block form-control" for="investment">Investment Amount:</label>
+                    <label class="d-block form-control" for="interest">Yearly Interest Rate:</label>
+                    <label class="d-block form-control" for="years">Number Of Years:</label>
+                </div>
+                <div>
+                    <input class="d-block form-control ml-5" type="text" name="investment" id="investment" required>
+                    <input class="d-block form-control ml-5" type="text" name="interest" id="interest" required>
+                    <input class="d-block form-control ml-5" type="text" name="years" id="years" required>
+                    <input class="d-block form-control ml-5" type="submit" value="Calculate">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
